@@ -1,7 +1,8 @@
-package com.example.obvious_rushabh
+package com.example.obvious_rushabh.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.obvious_rushabh.R
 
 class MainActivity : AppCompatActivity() {
 
