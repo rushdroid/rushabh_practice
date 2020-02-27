@@ -3,6 +3,7 @@ package com.example.obvious_rushabh.vm
 import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.util.Log
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.obvious_rushabh.model.NasaModel
 import com.google.gson.Gson
@@ -11,7 +12,7 @@ import java.io.IOException
 import java.io.InputStream
 
 class MainViewModel : ViewModel() {
-
+    
     fun getJsonDataFromAsset(context: Context, fileName: String): List<NasaModel>? {
         val jsonString: String
         try {
@@ -27,6 +28,5 @@ class MainViewModel : ViewModel() {
 
         return nasaModel
     }
-
 
 }
